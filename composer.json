@@ -1,0 +1,55 @@
+{
+    "name": "davepro/ravendb-php-client-11",
+    "version": "1.0",
+    "type": "library",
+    "description": "RavenDB PHP client - 11",
+    "keywords": [
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dawit G.",
+            "email": "daveprolife@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-ds": "*",
+        "ext-json": "*",
+        "ext-zip": "*",
+        "ext-fileinfo": "*",
+        "doctrine/annotations": "^1.14",
+        "doctrine/inflector": "^2.0",
+        "ramsey/uuid": "^4.7",
+        "symfony/http-client": "^7.1 || ^6.1",
+        "symfony/mime": "^7.2",
+        "symfony/property-access": "^7.1.4 || ^6.1",
+        "symfony/serializer": "^6.4"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.12.98",
+        "phpunit/phpunit": "~9.6",
+        "squizlabs/php_codesniffer": "^3.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "RavenDB\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\RavenDB\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs src tests",
+        "fix-style": "phpcbf src tests",
+        "stan": "phpstan analyse src tests",
+        "psalm": "psalm"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
