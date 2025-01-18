@@ -19,7 +19,7 @@
         "ext-json": "*",
         "ext-zip": "*",
         "ext-fileinfo": "*",
-        "doctrine/annotations": "^1.14",
+        "doctrine/annotations": "^2.0",
         "doctrine/inflector": "^2.0",
         "ramsey/uuid": "^4.7",
         "symfony/http-client": "^7.1 || ^6.1",
